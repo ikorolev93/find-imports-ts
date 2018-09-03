@@ -1,0 +1,27 @@
+{
+  "name": "find-imports-ts",
+  "version": "0.0.0",
+  "description": "Collect all import statements",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deadNightTiger/find-imports-ts.git"
+  },
+  "keywords": [
+    "typescript",
+    "find",
+    "imports"
+  ],
+  "author": "Igor Korolev <missterr@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deadNightTiger/find-imports-ts/issues"
+  },
+  "homepage": "https://github.com/deadNightTiger/find-imports-ts#readme",
+  "dependencies": {
+    "typescript": "^3.0.3"
+  }
+}
