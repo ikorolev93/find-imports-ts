@@ -1,2 +1,1 @@
-import { findImports } from './findImports';
-export = findImports;
+export { findImports, findImportsSync } from './findImports';

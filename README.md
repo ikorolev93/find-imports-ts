@@ -19,6 +19,7 @@ sinon-chai
 ### API
 
 ```js
-const findImports = require('find-imports-ts');
-findImports('index.ts'); // is a Set of all imports in the file  
+const { findImports, findImportsSync } = require('find-imports-ts');
+findImports('index.ts'); // Promise<Set<string>>
+findImportsSync('index.ts'); // Set<string>, uses fs.*Sync API
 ```
