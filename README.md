@@ -6,8 +6,19 @@ A tool to get all imports in your code. Inspired by [find-imports](https://npmjs
 
 ### CLI
 
-TODO
+```bash
+$ npx find-imports-ts src/*.ts
+./collectImports
+typescript
+fs
+sinon
+chai
+sinon-chai
+```
 
 ### API
 
-TODO
+```js
+const findImports = require('find-imports-ts');
+
+```

@@ -1,4 +1,2 @@
-import { collectImports } from './collectImports';
-
-(collectImports as any).default = collectImports;
-export = collectImports;
+import { findImports } from './findImports';
+export = findImports;

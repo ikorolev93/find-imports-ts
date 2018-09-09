@@ -9,6 +9,10 @@ const createSrc = (content: TemplateStringsArray) =>
   ts.createSourceFile('index.ts', content[0], ts.ScriptTarget.ESNext);
 const setOf = <T>(...args: T[]): Set<T> => new Set(args);
 
+afterEach(() => {
+  sinon.restore();
+});
+
 describe('collectImports()', () => {
   it('should return a Set', () => {
     const src = createSrc``;
@@ -50,6 +54,5 @@ describe('collectImports()', () => {
     sinon.replace(console, 'warn', fake);
     expect(collectImports(src)).to.deep.equal(setOf());
     expect(fake).to.have.been.calledOnce;
-    sinon.restore();
   });
 });
