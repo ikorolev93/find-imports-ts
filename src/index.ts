@@ -1,3 +1,4 @@
 import { collectImports } from './collectImports';
 
-export default collectImports;
+(collectImports as any).default = collectImports;
+export = collectImports;

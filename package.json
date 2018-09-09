@@ -7,7 +7,9 @@
   "scripts": {
     "test": "mocha -r ts-node/register src/**/*.test.[tj]s",
     "cli": "ts-node src/cli.ts",
-    "build": "tsc"
+    "clean": "rimraf lib",
+    "build": "tsc",
+    "rebuild": "run-s clean build"
   },
   "repository": {
     "type": "git",
@@ -25,8 +27,6 @@
   },
   "homepage": "https://github.com/deadNightTiger/find-imports-ts#readme",
   "dependencies": {
-    "@types/sinon-chai": "^3.2.0",
-    "sinon-chai": "^3.2.0",
     "typescript": "^3.0.3"
   },
   "devDependencies": {
@@ -34,22 +34,15 @@
     "@types/mocha": "^5.2.5",
     "@types/node": "^10.9.4",
     "@types/sinon": "^5.0.2",
+    "@types/sinon-chai": "^3.2.0",
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
+    "npm-run-all": "^4.1.3",
     "prettier": "^1.14.2",
-    "rollup": "^0.65.0",
-    "rollup-plugin-typescript2": "^0.17.0",
+    "rimraf": "^2.6.2",
     "sinon": "^6.1.5",
+    "sinon-chai": "^3.2.0",
     "ts-node": "^7.0.1"
-  },
-  "ava": {
-    "extensions": [
-      "ts"
-    ],
-    "require": [
-      "ts-node/register"
-    ],
-    "compileEnhancements": false
   },
   "prettier": {
     "trailingComma": "all",
