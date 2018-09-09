@@ -20,5 +20,5 @@ sinon-chai
 
 ```js
 const findImports = require('find-imports-ts');
-
+findImports('index.ts'); // is a Set of all imports in the file  
 ```
