@@ -1,10 +1,12 @@
 {
   "name": "find-imports-ts",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Collect all import statements",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "bin": "lib/cli.js",
+  "bin": {
+    "find-imports-ts": "lib/cli.js"
+  },
   "scripts": {
     "test": "mocha -r ts-node/register src/**/*.test.[tj]s",
     "cli": "ts-node src/cli.ts",
